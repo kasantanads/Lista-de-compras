@@ -140,3 +140,22 @@ header {
         cursor: pointer;
     }
 }
+
+@media (width < 768px) {
+    .input-btn {
+        display: flex;
+        flex-direction: column;
+
+        & #item-add {
+            width: 230px;
+        }
+
+        & button {
+            width: 230px;
+        }
+    }
+
+    #remove-item {
+        width: 230px;
+    }
+}
