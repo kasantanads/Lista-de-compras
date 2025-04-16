@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F4F5FB;
+}
+
+header {
+
+    & img {
+        padding-top: 25px;
+        width: 155px;
+    }
+}
+
+#container {
+
+    & a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        font-family: "Inter", sans-serif;
+        color: #CA3884;
+    }
+
+    & h2 {
+        margin-top: 13px;
+        font: 700 24px/32px "Inter", sans-serif
+    }
+}
+
+.input-btn {
+    display: flex;
+    gap: 16px;
+    padding-block: 44px 40px;
+
+    & #item-add {
+        width: 450px;
+        height: 44px;
+        border: 2px solid #D1D5DB;
+        border-radius: 12px;
+        padding: 11px 0px 9px 18px;
+    }
+
+    & #item-add::placeholder {
+        font: 400 16px/140% "Inter", sans-serif;
+    }
+
+    & #item-add:hover {
+        border: 2px solid #B9C2D0;
+    }
+
+    & #item-add:focus {
+        border: 2px solid #CA3884;
+        outline: none;
+    }
+
+    & button {
+        width: 160px;
+        border: none;
+        height: 44px;
+        background-color: #CA3884;
+        color: #FFFFFF;
+        border-radius: 12px;
+        font: 400 16px/140% "Inter", sans-serif;
+    }
+
+    & button:hover {
+        cursor: pointer;
+        background-color: #A52C6B;
+    }
+}
+
+.items {
+    & ul {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        & li {
+            background-color: #FFFFFF;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 20px 8px 12px;
+            border-radius: 6px;
+
+            & .check {
+                display: flex;
+                gap: 12px;
+            }
+
+            & span {
+                font: 500 16px/24px "Inter", sans-serif;
+                color: #374151;
+            }
+
+            & img {
+               width: 16px;
+               cursor: pointer;
+            }
+        }
+    }
+}
+
+.display-none {
+    display: none;
+}
+
+#remove-item {
+    display: flex;
+    justify-content: space-between;
+    background-color: #C93847;
+    border-radius: 12px;
+    margin-top: 36px;
+
+    & div {
+        display: flex;
+        align-items: center;
+        padding: 12px;
+    }
+
+    & div:nth-child(1){
+        gap: 8px;
+
+        & span {
+            color: #FFFFFF;
+            font: 600 16px/20px "Inter", sans-serif;
+        }
+    }
+
+    & div:nth-child(2){
+        cursor: pointer;
+    }
+}

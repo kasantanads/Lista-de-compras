@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>QuickList</title>
+</head>
+<body>
+    <header><img src="assets/logo.svg" alt=""></header>
+
+    <section id="container">
+        <a href="#"><img src="assets/arrow_left_icon_151610.svg" alt=""> Voltar</a>
+        <h2>Compras da semana</h2>
+
+        <div class="input-btn">
+            <input id="item-add" type="text" placeholder="Adicione um novo item"><button type="submit" i
+            id="submit-btn" >Adicionar item</button>
+        </div>
+
+        <div class="items">
+            <ul id="list">
+                <li class="item">
+                    <div class="check">
+                        <input type="checkbox"><span>Pão de forma</span>
+                    </div>
+                    <div><img class="bin" src="assets/bin.svg" alt=""></div>
+                </li>
+
+                <li class="item">
+                    <div class="check">
+                        <input type="checkbox"><span>Café preto</span>
+                    </div>
+                    <div><img class="bin" src="assets/bin.svg" alt=""></div>
+                </li>
+
+                <li class="item">
+                    <div class="check">
+                        <input type="checkbox"><span>Suco de laranja</span>
+                    </div>
+                    <div><img class="bin" src="assets/bin.svg" alt=""></div>
+                </li>
+            </ul>
+        </div>
+
+        <div id="display" class="display-none">
+            <div id="remove-item">
+                <div><img src="assets/warning.svg" alt=""><span>O item foi removido da lista</span></div>
+                <div><img src="assets/close.svg" alt=""></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
